@@ -1,20 +1,128 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .monoton-regular {
   font-family: "Monoton", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: aliceblue;
 }
-
-body {
+html {
+  height: 99%;
   display: flex;
 }
-.side-left {
-  width: 50%;
+/* * {
+  outline: 1px solid red !important;
+} */
+/* 
+body {
+  display: flex;
   height: 100%;
+} */
+
+#x {
+  display: flex;
+  min-height: 101%;
+  width: 113%;
+}
+
+#iconDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: 44%;
+}
+.side-left {
+  background-size: 100% 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.side-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 24px;
 }
 img {
-  height: 300px;
+  max-width: 75px;
 }
-.impo {
-  height: 100px;
+.p-white {
+  display: flex;
+  color: honeydew;
+  justify-content: center;
+}
+.div-log {
+  background-color: rgb(248, 246, 242);
 }
