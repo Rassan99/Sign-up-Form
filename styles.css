@@ -68,15 +68,23 @@ h6 {
 }
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .monoton-regular {
-  font-family: "Monoton", sans-serif;
+  font-family: "myfont";
   font-weight: 400;
   font-style: normal;
   color: aliceblue;
+  font-size: 4em;
 }
 html {
   height: 99%;
   display: flex;
 }
+@font-face {
+  font-family: "MyFont";
+  src: url("Norse-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* * {
   outline: 1px solid red !important;
 } */
@@ -113,7 +121,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 24px;
+  max-width: 1219px;
+  background-color: #f9fafb;
 }
 img {
   max-width: 75px;
@@ -124,5 +133,67 @@ img {
   justify-content: center;
 }
 .div-log {
-  background-color: rgb(248, 246, 242);
+  padding-left: 25px;
+  box-shadow: -1px 6px 2px 0px rgb(221 219 219 / 57%);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 255);
+}
+.bold-text {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 22px;
+  margin-left: 25px;
+}
+.par {
+  width: 71%;
+  margin-bottom: 33px;
+}
+button {
+  background-color: rgb(36, 66, 36);
+  color: rgb(255, 255, 255);
+  margin-left: 25px;
+  box-shadow: -1px 6px 2px 0px rgb(221 219 219 / 57%);
+  border-radius: 5p;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-top: 49px;
+  margin-left: 25px;
+}
+.big-text {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+#green-text {
+  color: green;
+}
+a {
+  text-decoration: none;
+}
+.log {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ll {
+  display: flex;
+}
+div#parent-log {
+  display: flex;
+  flex-direction: row;
+}
+div.log-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+div.log-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
 }
