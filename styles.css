@@ -75,8 +75,9 @@ h6 {
   font-size: 4em;
 }
 html {
-  height: 99%;
+  height: 100%;
   display: flex;
+  width: 100%;
 }
 @font-face {
   font-family: "MyFont";
@@ -96,8 +97,8 @@ body {
 
 #x {
   display: flex;
-  min-height: 101%;
-  width: 113%;
+  min-height: 100%;
+  width: 102%;
 }
 
 #iconDiv {
@@ -116,13 +117,14 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  width: 40%;
 }
 .side-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1219px;
   background-color: #f9fafb;
+  width: 60%;
 }
 img {
   max-width: 75px;
